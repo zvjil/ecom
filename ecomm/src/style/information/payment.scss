@@ -1,0 +1,14 @@
+.payment {
+  grid-row: content-s/content-;
+  grid-column: s/e;
+
+  &__form {
+    display: grid;
+    grid-template-rows: [name-s] 64px [name-e card-s] 64px [card-e expiration-ccv-s] 64px [expiration-ccv-e] minmax(
+        20px,
+        81px
+      ) [line-s] 26px [line-e buttons-s] 38px [buttons-e];
+    grid-template-columns: [back-s] 137px [back-e space-s] 40px [space-e pay-complete-s] 1fr [pay-complete-e] 1fr;
+    grid-row-gap: 15px;
+  }
+}
